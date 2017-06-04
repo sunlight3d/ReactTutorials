@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.hello {
+    padding: 10px;
+    color: white;
+    background-color: red;
+}
+.UserDetail {
+    color: white;
+    background-color: green;
+}
+
+.OtherInfo {
+    color: white;
+    background-color: blue;
+}
+
+.ToggleButton {
+    margin: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    border: none;
+}
