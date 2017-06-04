@@ -2,40 +2,38 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class Counter extends React.Component {
+class ToggleButton extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {seconds: 0};
+        this.state = {isOn: true};
+        this.buttonClick = this.buttonClick.bind(this);
     }
-    incrementCounter() {
-        this.setState(
-            (prevState, props) => ({
-                seconds: prevState.seconds + 1
-            })
-        );
+    buttonClick() {
+        this.setState(prevState => ({
+                isOn: !prevState.isOn
+            }
+        ));
     }
-    componentDidMount() {
-        this.timerID = setInterval(
-            () => this.incrementCounter(),
-            1000
-        );
+    /*
+    buttonClick = () => {
+        this.setState(prevState => ({
+                isOn: !prevState.isOn
+            }
+        ));
     }
-    
-    componentWillUnmount() {
-        clearInterval(this.timerID);
-    }
+    */
 
     render() {
         return (
-            <div>
-                <h1>This is a counting machine!</h1>
-                <h2>Seconds: {this.state.seconds} s </h2>
-            </div>
+            <button className="ToggleButton" onClick={this.buttonClick}>
+                This is a toggle button:
+                {this.state.isOn ? " ON": " OFF"}
+            </button>
         );
     }
 }
 
 ReactDOM.render(
-  <Counter />,
+  <ToggleButton />,
   document.getElementById('root')
 );
