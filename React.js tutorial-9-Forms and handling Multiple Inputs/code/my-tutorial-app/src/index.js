@@ -2,47 +2,34 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function ListItem(props) {
-    return <li>{props.value}</li>;
-}
+class FormComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+  }
 
-class AnimalsComponent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.listItems = props.animals.map(
-            (animal, index) => <ListItem key={animal.id} value={index.toString() + "-" +animal.name} />
-        );
-    }
-    render() {
-        return (<ul>
-                    {this.listItems}
-                </ul>
-        );
-    }
+  handleChange = (event) => {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit = (event) => {
+      alert('A name was submitted: ' + this.state.value);
+      event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
 }
-const animals = [
-                    {
-                        id: "xy000",
-                        name: "lion",
-                        title: "This is a lion"
-                    },
-                    {
-                        id: "xy001",
-                        name: "tiger",
-                        title: "This is a tiger"
-                    },
-                    {
-                        id: "xy002",
-                        name: "dog",
-                        title: "This is a dog"
-                    },
-                    {
-                        id: "xy003",
-                        name: "dinosaur",
-                        title: "This is a dinosaur"
-                    }
-                ];
 ReactDOM.render(
-  <AnimalsComponent animals={animals} />,
+  <FormComponent />,
   document.getElementById('root')
 );
