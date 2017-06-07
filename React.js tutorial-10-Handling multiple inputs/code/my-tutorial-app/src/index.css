@@ -27,3 +27,8 @@ body {
     width: 200px;
     border: none;
 }
+.inputForm {
+    margin: 20px;
+    padding:10px;
+    color:green;
+}

@@ -5,24 +5,24 @@ import './index.css';
 class FormComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {textData: ''};
   }
 
   handleChange = (event) => {
-    this.setState({value: event.target.value});
+    this.setState({textData: event.target.value});
   }
 
   handleSubmit = (event) => {
-      alert('A name was submitted: ' + this.state.value);
+      alert('You submitted text data: ' + this.state.textData);
       event.preventDefault();
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="inputForm">
         <label>
           Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" value={this.state.textData} onChange={this.handleChange} />
         </label>
         <input type="submit" value="Submit" />
       </form>
