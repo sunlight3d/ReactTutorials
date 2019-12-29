@@ -261,7 +261,7 @@ async-each@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-each/-/async-each-1.0.1.tgz#19d386a1d9edc6e7c1c85d388aedbcc56d33602d"
 
-async@^1.4.0, async@^1.5.2:
+async@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
@@ -1367,6 +1367,10 @@ commander@2.9.x, commander@~2.9.0:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
+commander@~2.20.3:
+  version "2.20.3"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+
 commondir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
@@ -1516,6 +1520,14 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     ripemd160 "^2.0.0"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+create-react-class@^15.6.0:
+  version "15.6.3"
+  resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
 
 cross-spawn@4.0.2:
   version "4.0.2"
@@ -2650,14 +2662,14 @@ handle-thing@^1.2.5:
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-1.2.5.tgz#fd7aad726bf1a5fd16dfc29b2f7a6601d27139c4"
 
 handlebars@^4.0.3:
-  version "4.0.10"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.10.tgz#3d30c718b09a3d96f23ea4cc1f403c4d3ba9ff4f"
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.3.tgz#5cf75bd8714f7605713511a56be7c349becb0482"
   dependencies:
-    async "^1.4.0"
+    neo-async "^2.6.0"
     optimist "^0.6.1"
-    source-map "^0.4.4"
+    source-map "^0.6.1"
   optionalDependencies:
-    uglify-js "^2.6"
+    uglify-js "^3.1.4"
 
 har-schema@^1.0.5:
   version "1.0.5"
@@ -3460,6 +3472,10 @@ js-tokens@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
 
+"js-tokens@^3.0.0 || ^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+
 js-yaml@^3.4.3, js-yaml@^3.5.1, js-yaml@^3.7.0:
   version "3.8.4"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.4.tgz#520b4564f86573ba96662af85a8cafa7b4b5a6f6"
@@ -3712,6 +3728,12 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   dependencies:
     js-tokens "^3.0.0"
 
+loose-envify@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
+
 loud-rejection@^1.0.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/loud-rejection/-/loud-rejection-1.6.0.tgz#5b46f80147edee578870f086d04821cf998e551f"
@@ -3861,13 +3883,17 @@ minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@0.0.8, minimist@~0.0.1:
+minimist@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
 minimist@^1.1.1, minimist@^1.1.3, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
+
+minimist@~0.0.1:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
 
 mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
@@ -3908,6 +3934,10 @@ ncname@1.0.x:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+neo-async@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
 
 no-case@^2.2.0:
   version "2.3.1"
@@ -4047,7 +4077,7 @@ oauth-sign@~0.8.1:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
 
-object-assign@4.1.1, object-assign@^4.0.1, object-assign@^4.1.0:
+object-assign@4.1.1, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
@@ -4656,12 +4686,13 @@ promise@7.1.1, promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.7, prop-types@~15.5.7:
-  version "15.5.10"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
+prop-types@^15.5.10:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   dependencies:
-    fbjs "^0.8.9"
-    loose-envify "^1.3.1"
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
 
 proxy-addr@~1.1.4:
   version "1.1.4"
@@ -4773,14 +4804,14 @@ react-dev-utils@^3.0.0:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@15.5.4:
-  version "15.5.4"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"
+react-dom@^15.5.4:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.2.tgz#41cfadf693b757faf2708443a1d1fd5a02bef730"
   dependencies:
     fbjs "^0.8.9"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
-    prop-types "~15.5.7"
+    prop-types "^15.5.10"
 
 react-error-overlay@^1.0.7:
   version "1.0.7"
@@ -4792,6 +4823,10 @@ react-error-overlay@^1.0.7:
     react-dev-utils "^3.0.0"
     settle-promise "1.0.0"
     source-map "0.5.6"
+
+react-is@^16.8.1:
+  version "16.12.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
 
 react-scripts@1.0.7:
   version "1.0.7"
@@ -4836,14 +4871,15 @@ react-scripts@1.0.7:
   optionalDependencies:
     fsevents "1.0.17"
 
-react@15.5.4:
-  version "15.5.4"
-  resolved "https://registry.yarnpkg.com/react/-/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"
+react@^15.5.4:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"
   dependencies:
+    create-react-class "^15.6.0"
     fbjs "^0.8.9"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
-    prop-types "^15.5.7"
+    prop-types "^15.5.10"
 
 read-all-stream@^3.0.0:
   version "3.1.0"
@@ -5354,11 +5390,9 @@ source-map@0.5.6, source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.3, source
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
-source-map@^0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
-  dependencies:
-    amdefine ">=0.0.4"
+source-map@^0.6.1, source-map@~0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
 source-map@~0.2.0:
   version "0.2.0"
@@ -5724,7 +5758,7 @@ uglify-js@3.0.x:
     commander "~2.9.0"
     source-map "~0.5.1"
 
-uglify-js@^2.6, uglify-js@^2.8.27, uglify-js@^2.8.5:
+uglify-js@^2.8.27, uglify-js@^2.8.5:
   version "2.8.27"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.27.tgz#47787f912b0f242e5b984343be8e35e95f694c9c"
   dependencies:
@@ -5732,6 +5766,13 @@ uglify-js@^2.6, uglify-js@^2.8.27, uglify-js@^2.8.5:
     yargs "~3.10.0"
   optionalDependencies:
     uglify-to-browserify "~1.0.0"
+
+uglify-js@^3.1.4:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.3.tgz#f918fce9182f466d5140f24bb0ff35c2d32dcc6a"
+  dependencies:
+    commander "~2.20.3"
+    source-map "~0.6.1"
 
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
@@ -6052,9 +6093,13 @@ window-size@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
 
-wordwrap@0.0.2, wordwrap@~0.0.2:
+wordwrap@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
+
+wordwrap@~0.0.2:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
 
 wordwrap@~1.0.0:
   version "1.0.0"
